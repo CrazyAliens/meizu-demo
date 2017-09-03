@@ -1,0 +1,384 @@
+/*公用的，使1240px居中*/
+.content{
+    /*position: relative;*/
+    width: 1240px;
+    height: 100%;
+    margin: auto;
+}
+/*header*/
+.header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    z-index: 999;
+}
+.header:hover{  background-color: #fafafa;  }
+/*header左部分：logo*/
+.content .hd-left .logo{
+    display: block;
+    width: 200px;
+    height: 80px;
+    background: url("../img/logo/logo-new-toggle_294da7f.png") no-repeat center;
+}
+/*header左部分：logo*/
+/*header右部分*/
+.content .hd-right{  width: 1040px;  height: 100%  }
+/*header右部分：nav*/
+.content .hd-right .nav{  width: 800px;  height: 100%  }
+.content .hd-right .nav>ul li{
+    float: left;
+    color: #666;
+    text-align: center;
+}
+.content .hd-right .nav ul li span,
+.content .hd-right .nav ul li a{  display: block;  padding: 32px 21px;  }
+.content .hd-right .nav ul li span:hover,
+.content .hd-right .nav ul li a:hover{  color: cornflowerblue ;  }
+.content .hd-right .nav>ul>li>.phone-list{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color:#fafafa;
+}
+.content .hd-right .nav>ul>li>.phone-list>ul{  margin-left: calc(50% - 328px);  }
+.content .hd-right .nav ul li:hover .phone-list{  display: block;  z-index: 999;  }
+/*header右部分：nav*/
+/*header右部分：uesr和car*/
+.content .hd-right .triangle{
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: calc(50% - 8px);
+    width: 0px;
+    border-bottom: 10px solid white;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.content .hd-right .car,
+.content .hd-right .user {  width: 100px;  height: 100%;  }
+.content .hd-right .car img,
+.content .hd-right .user img{  padding: 28px 38px;  }
+.content .hd-right .car .menu-2nd{
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border-radius: 2px;
+    background-color: white;
+}
+.content .hd-right .car .shopping-num{
+    position: absolute;
+    top: 22px;
+    left: 46px;
+    color: red;
+}
+.content .hd-right .user .menu-2nd{
+    display: none;
+    position: absolute;
+    width:98px;
+    top: 68px;
+    padding: 5px;
+    background-color:white;
+    border-radius: 2px;
+    text-align: center;
+    color: #666;
+ }
+.content .hd-right .user .menu-2nd li{  padding:2px 0;  }
+.content .hd-right .user:hover .menu-2nd,
+.content .hd-right .user:hover .triangle,
+.content .hd-right .car:hover .menu-2nd,
+.content .hd-right .car:hover .triangle{  display: block;  z-index: 999;  }
+/*header右部分：uesr和car*/
+/*header*/
+/*part1轮播图 */
+.part1 .swiper-wrapper .swiper-slide a{
+    display: block;
+    width: 100%;
+    min-width: 1240px;
+    height: 680px;
+}
+.part1 .swiper-wrapper .swiper-slide:nth-child(1) a{  background: url("../img/banner/1.jpg")no-repeat center/cover;  }
+.part1 .swiper-wrapper .swiper-slide:nth-child(2) a{  background: url("../img/banner/2.jpg")no-repeat center/cover;  }
+.part1 .swiper-wrapper .swiper-slide:nth-child(3) a{  background: url("../img/banner/3.jpg")no-repeat center/cover;  }
+.part1 .swiper-wrapper .swiper-slide:nth-child(4) a{  background: url("../img/banner/4.jpg")no-repeat center/cover;  }
+.part1 .swiper-wrapper .swiper-slide:nth-child(5) a{  background: url("../img/banner/5.jpg")no-repeat center/cover;  }
+/*part1轮播图 */
+/*part2 banner */
+.part2{width: 100%}
+.part2>.active>li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.part2>.active>li h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: -6px
+}
+.part2>.active>li span{  color: #999;  white-space: nowrap;  }
+/*part2 banner */
+/*part3 accessory*/
+.part3{
+    width: 100%;
+    margin-top:50px;
+    background-color:#f4f4f4 }
+.part3 .index-accessory .accessory-left{
+    width: 50%;
+    float: left;
+    height: 382px;
+}
+.part3 .index-accessory .accessory-left>a>img{margin-top: -28px;}
+.part3 .index-accessory .accessory-right{
+    width: 50%;
+    padding: 40px 0;
+    float: right;
+}
+.part3 .index-accessory .accessory-right li{
+    float: left;
+    width: 25%;
+    padding: 34px 0;
+    text-align: center;
+}
+/*part3结束*/
+/*par4*/
+.part4{width: 100%}
+.part4 .phone-show ul li{  float: left;  width: 25%;  }
+.part4 .phone-show ul li a .big-phone-img{
+    width: 208px;
+    height: 435px;
+    position: relative;
+    margin: 0 auto;
+}
+.part4 .phone-show ul li a .big-phone-img img{
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: left 1.5s;
+    -moz-transition: left 1.5s; /* Firefox 4 */
+    -webkit-transition: left 1.5s; /* Safari 和 Chrome */
+    -o-transition: left 1.5s; /* Opera */
+}
+.before-img{  z-index: 999;  }
+.part4 .phone-show ul li a:hover .before-img{  left: 25%;  }
+.part4 .phone-show ul li a:hover .after-img{  left: -25%;  }
+.phone-info{
+    display: block;
+    line-height: 28px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 28px;
+    text-align: center;
+}
+em{  font-style: normal;  color: red;  }
+/*.part4结束*/
+/*part5*/
+.part5 .swiper-wrapper .swiper-slide>ul>li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.part5 .swiper-wrapper .swiper-slide>ul>li img{  width:280px;  height: 280px;  }
+/*part5结束*/
+/*part6*/
+.part6{ margin-top:20px;border-top: #eee solid 1px}
+.part6 .show-goods ul>li{
+    float: left;
+    margin-top: 60px;
+    width: 25%;
+    text-align: center;
+}
+.part6 .show-goods ul>li .img-box{
+    position: relative;
+    width: 208px;
+    height: 238px;
+    margin: auto;
+}
+.part6 .show-goods ul>li img{
+    position: absolute;
+    width: 208px;
+    top:0;
+    left: 0;
+}
+.part6 .show-goods ul>li a:hover .after-img{  display: block;  }
+.part6 .show-goods ul>li a:hover .before-img{  display: none;  }
+/*part6结束*/
+/*part7*/
+.part7{
+    width: 100%;
+    height: 280px;
+    margin-top: 100px}
+.part7>ul>li{
+    float: left;
+    width: 33%;
+    margin:auto
+}
+.part7>ul>li img{
+    width: inherit;
+    min-width:428px;
+    border: white solid 1px
+}
+/*part7结束*/
+/*part8*/
+.part8{margin:60px auto;}
+.part8>ul>li{
+    display: block;
+    float: left;
+    margin-right:136px ;
+    color: #515151;
+    text-align: center;
+}
+.part8>ul>li:last-child{ margin-right: 0px;}
+/*part8结束*/
+/*part9*/
+.part9{
+    width: 100%;
+    padding-bottom: 68px;
+    border-top: 1px solid #eee;
+    background-color: #f4f4f4;
+}
+.part9 .bbs-center .bbs-title{  padding-top: 70px;  text-align: center;}
+.part9 .bbs-center .bbs-title h3{font-size: 34px; color: #333}
+.part9 .bbs-center .bbs-title p{  padding-top: 6px;  color: #999;  font-size: 16px;  }
+.part9 .bbs-center .bbs-title p a{color: #00b9f2;}
+.part9 .bbs-center #swiper-container9{  width:inherit;  height: 310px;  padding-top: 48px;  }
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li{ position:relative; float: left; margin:10px}
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li>a .mask {
+    position: absolute;
+    width: 290px;
+    height: 150px;
+    bottom: 0;
+    background:linear-gradient(to top,black,transparent);
+}
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li>a .bss-user-info{
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+    bottom: 60px;
+    color: #fff;
+    text-align: left;
+}
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li>a .bss-user-info img{
+    float:left;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    border-radius: 50%
+}
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li>a .bss-user-info .watch{
+    padding-left: 18px;
+    background: url(../img/logo/watch.png) no-repeat 0 4px;
+}
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li>a .bss-user-info .comments{
+     padding-left: 18px;
+     background: url(../img/logo/comments.png) no-repeat 0 4px;
+ }
+.part9 .bbs-center #swiper-container9 .swiper-wrapper .swiper-slide .bbs-content>ul>li>a  .bbs-img-title{
+    position: absolute;
+    left: 20px;
+    bottom: 26px;
+    color:white;
+    font-size:16px;
+}
+/*part9结束*/
+/*footer*/
+.footer .footer-row{
+    border-bottom: 1px solid #eee;
+    padding: 50px 0;
+}
+.footer .footer-row>ul {
+    width: 1000px;
+    float: left;
+
+}
+.footer .footer-row>ul>li{
+    float: left;
+    width: 240px;
+    height: 58px;
+    line-height: 30px;
+    color: #999;
+    text-align: left;
+}
+.footer .footer-row .online-server{  float: right; margin-top: -18px }
+.footer .footer-row .online-server>span{ padding-left: 22px; color: #999; font-size: 12px;}
+.footer .footer-row .online-server>p{
+    color: #00c3f5;
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer .footer-row .online-server>a{
+    width: 110px;
+    height: 40px;
+    background-color: #00c3f5;
+    padding-left: 26px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 8px;
+    display: block;
+}
+.footer .footer-row .online-server>a>img{
+    position: relative;
+    width: 20px;
+    left:-12px;
+    top: 0;
+}
+.footer .footer-info{
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+}
+.footer .footer-info>ul{ margin:20px 240px;}
+.footer .footer-info>ul>li{
+    float: left;
+    padding:0 10px;
+    border-right: 1px solid #999
+}
+.footer .footer-info>ul>li:last-child{border: none}
+.footer .footer-info>ul>li i{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url("../img/logo/country.png") no-repeat top/cover;
+}
+/*footer结束*/
+/*right-menu*/
+.right-menu{position: fixed;right: 0;bottom: 200px}
+.right-menu>ul>li{
+    right: 0;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: #d8d8d8;
+    overflow: hidden;
+    transition: .3s;
+}
+.right-menu>ul>li i{
+    float: left;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.right-menu>ul>li div{
+     float: left;
+     width: 100px;
+     height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 50px;
+ }
+.right-menu>ul>li:hover{
+    margin-left:-100px;
+    width: 150px;
+    background-color:#a39a9a ;
+}
